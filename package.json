@@ -1,0 +1,29 @@
+{
+  "name": "studynode",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "babel-node init.js --delay 2"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.16.1",
+    "http-errors": "^1.6.3",
+    "joi": "^14.3.1",
+    "jquery.session": "^1.0.0",
+    "mongoose": "^5.5.11",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.1",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "install": "^0.12.2",
+    "npm": "^6.9.0"
+  }
+}

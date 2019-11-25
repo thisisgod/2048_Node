@@ -1,0 +1,39 @@
+extends ./layouts/main
+
+block content
+    style.
+        div{ 
+                padding:auto;
+                margin:auto;
+                margin-top:50px;
+                width:300px;
+                height:300px;
+                text-align:center;
+                border:1px solid darkslategrey;
+            }
+            #btn{
+                font-family: 'Nanum Pen Script', serif;
+                font-size:16px;
+                background-color:darkslategrey;
+                color:white;
+            }
+    div
+        h3 회원가입
+        form(action="/sign_up" method="post")
+            table
+                tr
+                    td 이름 : 
+                    td
+                        input(type="text" name="name")
+                tr
+                    td 이메일 : 
+                    td
+                        input(type="text" name="email")
+                tr
+                    td 비밀번호 : 
+                    td
+                        input(type="text" name="password")
+                tr
+                    td
+                        input#btn(type="submit" value="회원가입")
+                

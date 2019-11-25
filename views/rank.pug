@@ -1,0 +1,22 @@
+extends layouts/main
+
+block append content
+    style.
+        table,th,td {
+                border:1px solid darkslategrey;
+                padding:auto;
+                margin:auto;
+                margin-top:50px;
+                width:300px;
+                text-align:center;
+            }
+    table
+        th Name
+        th Score
+        script.
+            var scorearr = new Array(#{scorearr});
+            var name = "#{namearr}";
+            var namearr = name.split(',');
+            for(var i in scorearr){
+                document.write("<tr><td>"+namearr[i]+"</td><td>"+scorearr[i]+"</td></tr>");
+            }

@@ -1,0 +1,35 @@
+extends ./layouts/main
+
+block content
+    style.
+        div{ 
+                padding:auto;
+                margin:auto;
+                margin-top:50px;
+                width:300px;
+                height:300px;
+                text-align:center;
+                border:1px solid darkslategrey;
+            }
+            #btn{
+                font-family: 'Nanum Pen Script', serif;
+                font-size:16px;
+                background-color:darkslategrey;
+                color:white;
+            }
+
+    div
+        h3 로그인
+        form(action="/login" method="post")
+            table
+                tr
+                    td 이메일 : 
+                    td
+                        input(type="text" name="email")
+                tr
+                    td 비번 : 
+                    td
+                        input(type="text" name="password")
+            input#btn(type="submit" value="로그인")
+        form(action="/sign_up" method="get")
+            input#btn(type="submit" value="회원가입")
