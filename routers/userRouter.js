@@ -86,6 +86,8 @@ userRouter.get("/rank",async function(req,res,next){
         scoreArr[j] = scorearr[i].score;
         j++;
     }
+    console.log(namearr);
+    console.log(scorearr);
     res.render("rank",{
     scorearr: scoreArr,
     namearr: namearr

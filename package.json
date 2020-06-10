@@ -1,5 +1,5 @@
 {
-  "name": "studynode",
+  "name": "myweb",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -24,6 +24,6 @@
     "@babel/node": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "install": "^0.12.2",
-    "npm": "^6.9.0"
+    "npm": "^6.13.1"
   }
 }
